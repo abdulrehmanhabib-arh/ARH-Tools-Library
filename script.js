@@ -1,34 +1,133 @@
 // Sample data for AI tools
 const tools = [
-   /*  {
-        name: ' ',
-        description: ' ',
-        link: ' ',
-        tags: [' ',' ',' '],
-        isNew: true,
-      price: ' '
-    }, */
+    /*  {
+         name: ' ',
+         description: ' ',
+         link: ' ',
+         tags: [' ',' ',' '],
+         isNew: true,
+       price: ' '
+     }, */
     {
-        name: 'Quill Bot',
-        description: 'Your AI Writing Partner: Find the words you need for emails, clarity, and productivity, ensuring your work flows seamlessly.',
-        link: 'https://gptzero.me/',
-        tags: ['Plagiarism Checker','Grammar Checker',' Humanizer','Paraphrasing'],
-        isNew: false,
+        name: 'Photopea',
+        description: 'A free online Photoshop alternative that lets you edit PSD, XCF, Sketch, XD, and CDR files directly in your browser.',
+        link: 'https://www.photopea.com/',
+        tags: ['Image Editor', 'Photoshop Alternative', 'Design', 'Web-based'],
+        isNew: true,
         price: 'Free'
-    }, 
+    },
+    {
+        name: 'Scribbr',
+        description: 'An academic proofreading and plagiarism-checking platform that helps you write better papers and theses.',
+        link: 'https://www.scribbr.com/',
+        tags: ['Plagiarism Checker', 'Proofreading', 'Academic Writing'],
+        isNew: true,
+        price: 'Paid with Free Tools'
+    },
+    {
+        name: 'Tome',
+        description: 'Create beautiful AI-powered presentations and visual storytelling documents with ease.',
+        link: 'https://tome.app/',
+        tags: ['Presentations', 'AI Tools', 'Storytelling', 'Productivity'],
+        isNew: true,
+        price: 'Free'
+    },
+    {
+        name: 'PDFescape',
+        description: 'Free online PDF editor that allows you to annotate, fill out forms, and edit PDFs easily.',
+        link: 'https://www.pdfescape.com/',
+        tags: ['PDF Editor', 'Form Filler', 'Annotator'],
+        isNew: true,
+        price: 'Free'
+    },
+    {
+        name: 'WriteSonic',
+        description: 'An AI writing tool to generate blog posts, product descriptions, ads, and more with just a few inputs.',
+        link: 'https://writesonic.com/',
+        tags: ['AI Writing', 'Marketing', 'Content Creation'],
+        isNew: true,
+        price: 'Freemium'
+    },
+    {
+        name: 'TTSMaker',
+        description: 'Convert text to speech for free using realistic AI voices. Supports multiple languages and accents.',
+        link: 'https://ttsmp3.com/',
+        tags: ['Text to Speech', 'Voice Generator', 'Accessibility'],
+        isNew: true,
+        price: 'Free'
+    },
+    {
+        name: 'Hunter.io',
+        description: 'Find professional email addresses easily and verify them with powerful tools for outreach.',
+        link: 'https://hunter.io/',
+        tags: ['Email Finder', 'Outreach', 'Lead Generation'],
+        isNew: true,
+        price: 'Freemium'
+    },
+    {
+        name: 'Blackbox AI',
+        description: 'Code faster using this AI tool that autocompletes, explains, and writes code in your favorite language.',
+        link: 'https://www.useblackbox.io/',
+        tags: ['AI for Coders', 'Autocompletion', 'Programming', 'Developer Tools'],
+        isNew: true,
+        price: 'Freemium'
+    }
+    ,
+    {
+        name: 'Remove.bg',
+        description: 'Instantly remove image backgrounds for free, perfect for designers, photographers, and anyone needing a clean cutout.',
+        link: 'https://www.remove.bg/',
+        tags: ['Background Remover', 'Image Editing', 'Design Tools'],
+        isNew: true,
+        price: 'Free'
+    },
+    {
+        name: 'TinyWow',
+        description: 'Free online tools to help with everyday tasks, including PDF editing, file conversion, and image utilities.',
+        link: 'https://tinywow.com/',
+        tags: ['PDF Tools', 'Converters', 'Image Tools', 'Productivity'],
+        isNew: true,
+        price: 'Free'
+    },
+    {
+        name: 'Undraw',
+        description: 'Open-source illustrations for any idea you can imagine and create, completely free for commercial and personal use.',
+        link: 'https://undraw.co/illustrations',
+        tags: ['Illustrations', 'Design Resources', 'Open Source'],
+        isNew: true,
+        price: 'Free'
+    },
+    {
+        name: 'Zamzar',
+        description: 'Convert files from one format to another, supporting over 1200 different conversions.',
+        link: 'https://www.zamzar.com/',
+        tags: ['File Converter', 'Documents', 'Videos', 'Images'],
+        isNew: true,
+        price: 'Freemium'
+    },
+    {
+        name: 'PineTools',
+        description: 'A collection of simple and free tools for quick data and file manipulation like text, images, math, and more.',
+        link: 'https://pinetools.com/',
+        tags: ['Online Tools', 'Quick Utilities', 'Text Editing', 'Image Editing'],
+        isNew: true,
+        price: 'Free'
+    }
+    ,
+
     {
         name: 'Ahrefs',
         description: 'Ahrefs Paraphrasing Tool uses a language model to generate human-like text by learning patterns, grammar, and vocabulary from extensive text data.',
         link: 'https://ahrefs.com/writing-tools/paraphrasing-tool',
-        tags: ['AI','Paraphrasing',' Humanizer'],
+        tags: ['AI', 'Paraphrasing', ' Humanizer'],
         isNew: false,
         price: 'Free'
     },
     {
-        name: 'Quill Bot',
+        name: 'QuillBot',
         description: 'QuillBot offers AI tools for effortless writing: paraphrasing, grammar checking, tone analysis, fluency improvement, and more, enhancing writing efficiency.',
-        link: 'https://gptzero.me/',
-        tags: ['Plagiarism Checker','Paraphrasing',' Humanizer','Grammar Checker'],
+        link: 'https://quillbot.com/',
+        tags: ['Plagiarism Checker', 'Paraphrasing', ' Humanizer', 'Grammar Checker'],
         isNew: false,
         price: 'Free'
     },
@@ -37,29 +136,22 @@ const tools = [
         name: 'Bypass GPT',
         description: 'Ahrefs Paraphrasing Tool uses a language model to generate human-like text, learning from extensive data on patterns, grammar, and vocabulary.',
         link: 'https://bypassgpt.ai/',
-        tags: ['AI','AI Content Detector','Paraphrasing',' Humanizer'],
+        tags: ['AI', 'AI Content Detector', 'Paraphrasing', ' Humanizer'],
         isNew: false,
         price: 'Paid'
-    }, 
+    },
     {
-        name: 'Gpt Zero',
-        description: 'GPTZero, a leading AI detector, checks if a document is AI-written, including by ChatGPT, detecting AI use on a sentence level.',
-        link: 'https://gptzero.me/',
-        tags: ['AI','AI Content Detector'],
-        isNew: false,
-        price: 'Free'
-    }, {
         name: 'Zero GPT',
         description: 'ZeroGPT offers a high-accuracy AI Content and ChatGPT Detector. Free AI Checker & AI Detector for identifying AI GPT plagiarism.',
         link: 'https://www.zerogpt.com/',
-        tags: ['AI','AI Content Detector'],
+        tags: ['AI', 'AI Content Detector'],
         isNew: false,
         price: 'Free'
     }, {
         name: 'Google Keep',
         description: 'Keep makes note organization simple and efficient, helping you easily find what you need and manage your information effortlessly.',
         link: 'https://keep.google.com/',
-        tags: ['Google','Nots Maker','List Maker','Reminders'],
+        tags: ['Google', 'Nots Maker', 'List Maker', 'Reminders'],
         isNew: false,
         price: 'Free'
     }, {
@@ -73,14 +165,14 @@ const tools = [
         name: 'Roadmap',
         description: 'Roadmap offers community-created roadmaps, guides, and articles to help developers choose learning paths and grow in their careers.4',
         link: 'https://roadmap.sh',
-        tags: ['Roadmap','Learning'],
+        tags: ['Roadmap', 'Learning'],
         isNew: false,
         price: 'Free'
     }, {
         name: 'Icon finder',
         description: 'Iconfinder is the largest marketplace for icons, illustrations, and 3D illustrations, offering SVG, AI, and PNG formats for designers.',
         link: 'https://www.iconfinder.com/',
-        tags: ['Icon','Stickers','3D','Illustrations'],
+        tags: ['Icon', 'Stickers', '3D', 'Illustrations'],
         isNew: false,
         price: 'Free'
     },
@@ -96,7 +188,7 @@ const tools = [
         name: 'Flaticon',
         description: 'Download free icons and stickers for your projects. Access images crafted by designers, available in PNG, SVG, EPS, PSD, and CSS formats.',
         link: 'https://www.flaticon.com/',
-        tags: ['Icon','Stickers'],
+        tags: ['Icon', 'Stickers'],
         isNew: false,
         price: 'Free'
     },
@@ -112,7 +204,7 @@ const tools = [
         name: 'Dora',
         description: 'Deliver flawless projects effortlessly using AI, create 3D animated sites without coding. Dora AI offers originality with no templates or stock photos.',
         link: 'https://dora.run/',
-        tags: ['AI', 'Website Builder','3D'],
+        tags: ['AI', 'Website Builder', '3D'],
         isNew: false,
         price: 'Free'
     },
@@ -128,7 +220,7 @@ const tools = [
         name: 'Magic Studio',
         description: 'With Magic Studio, harness AI to create, edit images effortlessly—add, remove objects, backgrounds, and craft stunning visuals for product pages.',
         link: 'https://magicstudio.com/',
-        tags: ['AI', 'Text to Image','Image Upscaler','Magic Eraser','Background Remover'],
+        tags: ['AI', 'Text to Image', 'Image Upscaler', 'Magic Eraser', 'Background Remover'],
         isNew: false,
         price: 'Free'
     },
@@ -136,7 +228,7 @@ const tools = [
         name: 'Pacdora',
         description: 'Pacdora is an online tool for packaging design, offering editing, 3D preview, rendering, and real-time application of designs to packaging models.',
         link: 'https://ideogram.ai/t/explore',
-        tags: ['AI','3D', 'Mokeup'],
+        tags: ['AI', '3D', 'Mokeup'],
         isNew: false,
         price: 'Paid'
     },
@@ -168,7 +260,7 @@ const tools = [
         name: 'Canva',
         description: 'Canva is a graphic design platform launched in 2013, offering tools for creating social media graphics, presentations, merchandise, and websites.',
         link: 'https://www.canva.com/',
-        tags: ['Mokeup', 'Logo', 'illustrations','Video Editor'],
+        tags: ['Mokeup', 'Logo', 'illustrations', 'Video Editor'],
         isNew: false,
         price: 'Free'
     },
@@ -176,7 +268,7 @@ const tools = [
         name: 'Microsoft Designer',
         description: 'A graphic design app for creating professional-quality social media posts, invitations, digital postcards, graphics, and more with ease.',
         link: 'https://designer.microsoft.com/',
-        tags: ['Mokeup', 'Logo', 'illustrations','Video Editor'],
+        tags: ['Mokeup', 'Logo', 'illustrations', 'Video Editor'],
         isNew: false,
         price: 'Free'
     },
@@ -184,7 +276,7 @@ const tools = [
         name: 'Placeit',
         description: 'Upload your design or use templates. Create a T-shirt mockup in seconds and design easily with a few simple steps.',
         link: 'https://placeit.net/',
-        tags: ['Mokeup', 'Logo', 'illustrations','Video Editor'],
+        tags: ['Mokeup', 'Logo', 'illustrations', 'Video Editor'],
         isNew: false,
         price: 'Paid'
     },
@@ -285,7 +377,10 @@ const renderTools = (tools) => {
         toolCard.className = 'col';
         toolCard.innerHTML = `
                 ${tool.isNew ? '<span class="new-marker">New</span>' : ''}
-                <span class="price-marker ${tool.price === 'Paid' ? 'paid' : ''}">${tool.price}</span>
+                <span class="price-marker ${tool.price === 'Paid' ? 'paid' : ''} ${tool.price === 'Freemium' ? 'Freemium' : ''}
+                ${tool.price === 'Paid with Free Tools' ? 'PaidwithFree' : ''}">${tool.price}</span>
+               
+
                 <h5>${tool.name}</h5>
                 <p>${tool.description}</p>
                 <div class="tags">

@@ -204,9 +204,18 @@ h2 {
     border-radius: 5px;
     font-size: 0.875rem;
 }
-.price-marker.paid {
-    background-color: #f39c12;
+.price-marker.paid{
+    background-color: #e63946; /* Red = attention/danger = $$$ */
 }
+
+.price-marker.Freemium {
+    background-color: #f4d35e; /* Yellow-gold = limited free */
+}
+
+.price-marker.PaidwithFree {
+    background-color: #52b788; /* Soft green = flexible paid/free option */
+}
+
 .btn {
     background-color: #27ae60;
     color: #ecf0f1;
